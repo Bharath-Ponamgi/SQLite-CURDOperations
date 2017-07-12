@@ -42,14 +42,14 @@ class SQLHelper {
                 Helper.NAME + " =? and " + Helper.INSTOCK + " =? and " + Helper.OUTSTOCK + " =?", whereArgs);
     }
 
-    ArrayList<Model> getAllData() {
+    ArrayList<StockModel> getAllData() {
         String[] columns = {Helper.UID, Helper.NAME, Helper.INSTOCK, Helper.OUTSTOCK};
         SQLiteDatabase db = helper.getWritableDatabase();
         Cursor cursor = db.query(Helper.TABLE_NAME, columns, null, null, null, null, null);
         //StringBuilder buffer = new StringBuilder();
-        ArrayList<Model> modelArr = new ArrayList<>();
+        ArrayList<StockModel> modelArr = new ArrayList<>();
         while (cursor.moveToNext()) {
-            Model model = new Model();
+            StockModel model = new StockModel();
             //int index0 = cursor.getColumnIndex(Helper.UID);
             int index1 = cursor.getColumnIndex(Helper.NAME);
             int index2 = cursor.getColumnIndex(Helper.INSTOCK);

@@ -19,14 +19,14 @@ import java.util.ArrayList;
  * Created by Bharath on 12/14/2016
  */
 
-class ItemsAdapter extends ArrayAdapter<Model> {
+class ItemsAdapter extends ArrayAdapter<StockModel> {
     private static final String TAG = "ItemsAdapter";
-    private ArrayList<Model> modelArr;
+    private ArrayList<StockModel> modelArr;
     private LayoutInflater vi;
     private SQLHelper helper;
     private TextView textView;
 
-    ItemsAdapter(Context context, int resource, ArrayList<Model> modelArr, SQLHelper helper, TextView textView) {
+    ItemsAdapter(Context context, int resource, ArrayList<StockModel> modelArr, SQLHelper helper, TextView textView) {
         super(context, resource, modelArr);
         this.modelArr = modelArr;
         this.helper = helper;

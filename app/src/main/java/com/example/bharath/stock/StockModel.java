@@ -4,7 +4,7 @@ package com.example.bharath.stock;
  * Created by Bharath on 12/14/2016
  */
 
-class Model {
+class StockModel {
 
     private String name;
     private int inStock;

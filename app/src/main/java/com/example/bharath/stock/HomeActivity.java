@@ -3,11 +3,9 @@ package com.example.bharath.stock;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
     SQLHelper helper;
     TextView textView;
     ListView itemsLv;
-    ArrayList<Model> modelArr;
+    ArrayList<StockModel> modelArr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
