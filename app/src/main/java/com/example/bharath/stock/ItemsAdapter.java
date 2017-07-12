@@ -23,10 +23,10 @@ class ItemsAdapter extends ArrayAdapter<StockModel> {
     private static final String TAG = "ItemsAdapter";
     private ArrayList<StockModel> modelArr;
     private LayoutInflater vi;
-    private SQLHelper helper;
+    private SQLiteHelper helper;
     private TextView textView;
 
-    ItemsAdapter(Context context, int resource, ArrayList<StockModel> modelArr, SQLHelper helper, TextView textView) {
+    ItemsAdapter(Context context, int resource, ArrayList<StockModel> modelArr, SQLiteHelper helper, TextView textView) {
         super(context, resource, modelArr);
         this.modelArr = modelArr;
         this.helper = helper;

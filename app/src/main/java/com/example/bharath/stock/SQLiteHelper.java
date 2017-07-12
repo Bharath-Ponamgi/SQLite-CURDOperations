@@ -14,10 +14,10 @@ import java.util.ArrayList;
  * Created by Bharath on 12/14/2016
  */
 
-class SQLHelper {
+class SQLiteHelper {
     private Helper helper;
 
-    SQLHelper(Context context) {
+    SQLiteHelper(Context context) {
         helper = new Helper(context);
 
     }

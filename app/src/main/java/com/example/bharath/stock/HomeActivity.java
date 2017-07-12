@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private static final String TAG = "HomeActivity";
-    SQLHelper helper;
+    SQLiteHelper helper;
     TextView textView;
     ListView itemsLv;
     ArrayList<StockModel> modelArr;
@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        helper = new SQLHelper(HomeActivity.this);
+        helper = new SQLiteHelper(HomeActivity.this);
 
         textView = (TextView) findViewById(R.id.no_items_tv);
         itemsLv = (ListView) findViewById(R.id.items_lv);
